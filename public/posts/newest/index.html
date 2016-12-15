@@ -4,28 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.17" />
-    <meta name="description" content="This should be a more useful description">
+    <meta name="description" content="">
 
 
-    <link rel="shortcut icon" href="https://juliosueiras.github.io/wireless-site/images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="localhost:1313/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Just another sample post</title>
-    <link href="https://juliosueiras.github.io/wireless-site/css/nucleus.css" rel="stylesheet">
-    <link href="https://juliosueiras.github.io/wireless-site/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://juliosueiras.github.io/wireless-site/css/hybrid.css" rel="stylesheet">
-    <link href="https://juliosueiras.github.io/wireless-site/css/featherlight.min.css" rel="stylesheet">
-    <link href="https://juliosueiras.github.io/wireless-site/css/perfect-scrollbar.min.css" rel="stylesheet">
-    <link href="https://juliosueiras.github.io/wireless-site/css/horsey.css" rel="stylesheet">
-    <link href="https://juliosueiras.github.io/wireless-site/css/theme.css" rel="stylesheet">
-    <link href="https://juliosueiras.github.io/wireless-site/css/hugo-theme.css" rel="stylesheet">
-    <script src="https://juliosueiras.github.io/wireless-site/js/jquery-2.x.min.js"></script>
+    <title>Wireless Review</title>
+    <link href="localhost:1313/css/nucleus.css" rel="stylesheet">
+    <link href="localhost:1313/css/font-awesome.min.css" rel="stylesheet">
+    <link href="localhost:1313/css/hybrid.css" rel="stylesheet">
+    <link href="localhost:1313/css/featherlight.min.css" rel="stylesheet">
+    <link href="localhost:1313/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="localhost:1313/css/horsey.css" rel="stylesheet">
+    <link href="localhost:1313/css/theme.css" rel="stylesheet">
+    <link href="localhost:1313/css/hugo-theme.css" rel="stylesheet">
+    <script src="localhost:1313/js/jquery-2.x.min.js"></script>
     <style type="text/css">:root #header + #content > #left > #rlblock_left
     {display:none !important;}</style>
     
 
+    <link href="localhost:1313/css/slickQuiz.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/posts/newest/">
+  <body class="" data-url="/.">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -70,11 +71,11 @@
       
       
 
-      <li class="dd-item active parent" data-nav-id="/posts/newest/">
-        <a href="https://juliosueiras.github.io/wireless-site/posts/newest/">
+      <li class="dd-item active parent" data-nav-id="/.">
+        <a href="localhost:1313/.">
           <span>
             
-             Just another sample post
+             Wireless Review
             
            </span>
         </a>
@@ -113,7 +114,7 @@
                     
                   
                 
-                <span itemprop="title"> Just another sample post</span>
+                <span itemprop="title"> Wireless Review</span>
               </div>
               
 
@@ -121,9 +122,72 @@
             
     	        <div id="body-inner">
                 
-                <h1>Just another sample post</h1>
+                <h1>Wireless Review</h1>
                 
 
+<div id="slickQuiz">
+<h1 class="quizName"><!-- where the quiz name goes --></h1>
+
+<div class="quizArea">
+<div class="quizHeader">
+
+<a class="startQuiz" href="#">Get Started!</a>
+</div>
+
+<!-- where the quiz gets built -->
+</div>
+
+<div class="quizResults">
+<h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+
+<h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+
+<div class="quizResultsCopy">
+</div>
+</div>
+</div>
+
+<script>
+var quizJSON = {
+    "info": {
+        "name":    "",
+        "main":    "Wireless Review Quiz",
+    },
+    "questions": [
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "What number is the letter A in the English alphabet?",
+            "a": [
+                {"option": "8",      "correct": false},
+                {"option": "14",     "correct": false},
+                {"option": "1",      "correct": true},
+                {"option": "23",     "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
+            "q": "Which of the following best represents your preferred breakfast?",
+            "a": [
+                {"option": "Bacon and eggs",               "correct": false},
+                {"option": "Fruit, oatmeal, and yogurt",   "correct": true},
+                {"option": "Leftover pizza",               "correct": false},
+                {"option": "Eggs, fruit, toast, and milk", "correct": true} // no comma here
+            ],
+            "select_any": true,
+            "correct": "<p><span>Nice!</span> Your cholestoral level is probably doing alright.</p>",
+            "incorrect": "<p><span>Hmmm.</span> You might want to reconsider your options.</p>" // no comma here
+        }
+    ]
+    };
+$(function () {
+    $('#slickQuiz').slickQuiz();
+});
+</script>
+<div class="stemblock">
+<div class="content">
+\[\sum_2^{x}{H}\]
+</div>
+</div>
 
 
       
@@ -139,17 +203,21 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://juliosueiras.github.io/wireless-site/js/clipboard.min.js"></script>
-    <script src="https://juliosueiras.github.io/wireless-site/js/perfect-scrollbar.min.js"></script>
-    <script src="https://juliosueiras.github.io/wireless-site/js/perfect-scrollbar.jquery.min.js"></script>
-    <script src="https://juliosueiras.github.io/wireless-site/js/jquery.sticky-kit.min.js"></script>
-    <script src="https://juliosueiras.github.io/wireless-site/js/featherlight.min.js"></script>
-    <script src="https://juliosueiras.github.io/wireless-site/js/html5shiv-printshiv.min.js"></script>
-    <script src="https://juliosueiras.github.io/wireless-site/js/highlight.pack.js"></script>
+    <script src="localhost:1313/js/clipboard.min.js"></script>
+    <script src="localhost:1313/js/perfect-scrollbar.min.js"></script>
+    <script src="localhost:1313/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="localhost:1313/js/jquery.sticky-kit.min.js"></script>
+    <script src="localhost:1313/js/featherlight.min.js"></script>
+    <script src="localhost:1313/js/html5shiv-printshiv.min.js"></script>
+    <script src="localhost:1313/js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://juliosueiras.github.io/wireless-site/js/modernizr.custom.71422.js"></script>
-    <script src="https://juliosueiras.github.io/wireless-site/js/learn.js"></script>
-    <script src="https://juliosueiras.github.io/wireless-site/js/hugo-learn.js"></script>
+    <script src="localhost:1313/js/modernizr.custom.71422.js"></script>
+    <script src="localhost:1313/js/learn.js"></script>
+    <script src="localhost:1313/js/hugo-learn.js"></script>
+    <script src="localhost:1313/js/slickQuiz.js"></script>
+
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     
 
   </body>
