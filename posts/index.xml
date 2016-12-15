@@ -2,20 +2,83 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts-rsses on Hugo Blog Template for GitHub Pages</title>
-    <link>https://juliosueiras.github.io/wireless-site/posts/index.xml</link>
+    <link>localhost:1313</link>
     <description>Recent content in Posts-rsses on Hugo Blog Template for GitHub Pages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Mar 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://juliosueiras.github.io/wireless-site/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="#ZgotmplZ" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Just another sample post</title>
-      <link>https://juliosueiras.github.io/wireless-site/posts/newest/</link>
+      <title>Wireless Review</title>
+      <link>localhost:1313</link>
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://juliosueiras.github.io/wireless-site/posts/newest/</guid>
-      <description></description>
+      <guid>localhost:1313</guid>
+      <description>&lt;div id=&#34;slickQuiz&#34;&gt;
+&lt;h1 class=&#34;quizName&#34;&gt;&lt;!-- where the quiz name goes --&gt;&lt;/h1&gt;
+
+&lt;div class=&#34;quizArea&#34;&gt;
+&lt;div class=&#34;quizHeader&#34;&gt;
+
+&lt;a class=&#34;startQuiz&#34; href=&#34;#&#34;&gt;Get Started!&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- where the quiz gets built --&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;quizResults&#34;&gt;
+&lt;h3 class=&#34;quizScore&#34;&gt;You Scored: &lt;span&gt;&lt;!-- where the quiz score goes --&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 class=&#34;quizLevel&#34;&gt;&lt;strong&gt;Ranking:&lt;/strong&gt; &lt;span&gt;&lt;!-- where the quiz ranking level goes --&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&#34;quizResultsCopy&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+var quizJSON = {
+    &#34;info&#34;: {
+        &#34;name&#34;:    &#34;&#34;,
+        &#34;main&#34;:    &#34;Wireless Review Quiz&#34;,
+    },
+    &#34;questions&#34;: [
+        { // Question 1 - Multiple Choice, Single True Answer
+            &#34;q&#34;: &#34;What number is the letter A in the English alphabet?&#34;,
+            &#34;a&#34;: [
+                {&#34;option&#34;: &#34;8&#34;,      &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;14&#34;,     &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;1&#34;,      &#34;correct&#34;: true},
+                {&#34;option&#34;: &#34;23&#34;,     &#34;correct&#34;: false} // no comma here
+            ],
+            &#34;correct&#34;: &#34;&lt;p&gt;&lt;span&gt;That&#39;s right!&lt;/span&gt; The letter A is the first letter in the alphabet!&lt;/p&gt;&#34;,
+            &#34;incorrect&#34;: &#34;&lt;p&gt;&lt;span&gt;Uhh no.&lt;/span&gt; It&#39;s the first letter of the alphabet. Did you actually &lt;em&gt;go&lt;/em&gt; to kindergarden?&lt;/p&gt;&#34; // no comma here
+        },
+        { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
+            &#34;q&#34;: &#34;Which of the following best represents your preferred breakfast?&#34;,
+            &#34;a&#34;: [
+                {&#34;option&#34;: &#34;Bacon and eggs&#34;,               &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;Fruit, oatmeal, and yogurt&#34;,   &#34;correct&#34;: true},
+                {&#34;option&#34;: &#34;Leftover pizza&#34;,               &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;Eggs, fruit, toast, and milk&#34;, &#34;correct&#34;: true} // no comma here
+            ],
+            &#34;select_any&#34;: true,
+            &#34;correct&#34;: &#34;&lt;p&gt;&lt;span&gt;Nice!&lt;/span&gt; Your cholestoral level is probably doing alright.&lt;/p&gt;&#34;,
+            &#34;incorrect&#34;: &#34;&lt;p&gt;&lt;span&gt;Hmmm.&lt;/span&gt; You might want to reconsider your options.&lt;/p&gt;&#34; // no comma here
+        }
+    ]
+    };
+$(function () {
+    $(&#39;#slickQuiz&#39;).slickQuiz();
+});
+&lt;/script&gt;
+&lt;div class=&#34;stemblock&#34;&gt;
+&lt;div class=&#34;content&#34;&gt;
+\[\sum_2^{x}{H}\]
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
   </channel>
