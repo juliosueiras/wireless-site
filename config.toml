@@ -5,3 +5,4 @@ layoutdir = "layouts"
 publishdir = "public"
 title = "Hugo Blog Template for GitHub Pages"
 canonifyurls = true
+theme = "hugo-theme-learn"
