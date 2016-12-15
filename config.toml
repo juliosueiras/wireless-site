@@ -1,4 +1,4 @@
-baseurl = "http://juliosueiras.github.io/wireless-site/"
+baseurl = "https://juliosueiras.github.io/wireless-site/"
 languageCode = "en-us"
 contentdir = "content"
 layoutdir = "layouts"
