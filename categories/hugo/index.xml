@@ -14,8 +14,52 @@
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://juliosueiras.github.io/wireless-site/posts/newest/</guid>
-      <description>&lt;h1 id=&#34;_chapter_7&#34; class=&#34;sect0&#34;&gt;Chapter 7&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;_quiz&#34; class=&#34;sect0&#34;&gt;Quiz&lt;/h1&gt;
 &lt;div id=&#34;chapter7&#34;&gt;
+&lt;h1 class=&#34;quizName&#34;&gt;&lt;!-- where the quiz name goes --&gt;&lt;/h1&gt;
+
+&lt;div class=&#34;quizArea&#34;&gt;
+&lt;div class=&#34;quizHeader&#34;&gt;
+
+&lt;a class=&#34;startQuiz&#34; href=&#34;#&#34;&gt;Get Started!&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- where the quiz gets built --&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;quizResults&#34;&gt;
+&lt;h3 class=&#34;quizScore&#34;&gt;You Scored: &lt;span&gt;&lt;!-- where the quiz score goes --&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 class=&#34;quizLevel&#34;&gt;&lt;strong&gt;Ranking:&lt;/strong&gt; &lt;span&gt;&lt;!-- where the quiz ranking level goes --&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&#34;quizResultsCopy&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;chapter8&#34;&gt;
+&lt;h1 class=&#34;quizName&#34;&gt;&lt;!-- where the quiz name goes --&gt;&lt;/h1&gt;
+
+&lt;div class=&#34;quizArea&#34;&gt;
+&lt;div class=&#34;quizHeader&#34;&gt;
+
+&lt;a class=&#34;startQuiz&#34; href=&#34;#&#34;&gt;Get Started!&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- where the quiz gets built --&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;quizResults&#34;&gt;
+&lt;h3 class=&#34;quizScore&#34;&gt;You Scored: &lt;span&gt;&lt;!-- where the quiz score goes --&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;h3 class=&#34;quizLevel&#34;&gt;&lt;strong&gt;Ranking:&lt;/strong&gt; &lt;span&gt;&lt;!-- where the quiz ranking level goes --&gt;&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&#34;quizResultsCopy&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;chapter9&#34;&gt;
 &lt;h1 class=&#34;quizName&#34;&gt;&lt;!-- where the quiz name goes --&gt;&lt;/h1&gt;
 
 &lt;div class=&#34;quizArea&#34;&gt;
@@ -279,8 +323,282 @@ var chapter7 = {
     &#34;incorrect&#34;: &#34;Wrong,  The 802.11 standard is considered a wireless local area network (WLAN) standard. 802.11 hardware can, however, be utilized in other wireless topologies.&#34;
     } ]
     };
+
+
+var chapter8 = {
+    &#34;info&#34;: {
+        &#34;name&#34;:    &#34;&#34;,
+        &#34;main&#34;:    &#34;Chapter 8 Quiz&#34;,
+    },
+    &#34;questions&#34;: []
+    }
+
+
+var chapter9 = {
+    &#34;info&#34;: {
+        &#34;name&#34;:    &#34;&#34;,
+        &#34;main&#34;:    &#34;Chapter 9 Quiz&#34;,
+    },
+    &#34;questions&#34;: [
+        {
+            &#34;q&#34;: &#34;What is the difference between association frames and reassociation frames?&#34;,
+            &#34;a&#34;: [
+            {&#34;option&#34;: &#34;Association frames are management frames, whereas reassociation frames are control frames.&#34;, &#34;correct&#34;: false },
+            {&#34;option&#34;: &#34;Association frames are used exclusively for roaming.&#34;, &#34;correct&#34;: false },
+            {&#34;option&#34;: &#34;Reassociation frames contain the BSSID of the original AP.&#34;, &#34;correct&#34;: false },
+            {&#34;option&#34;: &#34;Only association frames are used to join a BSS.&#34;, &#34;correct&#34;: true },
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, Both frames are used to join a BSS. Reassociation frames are used during the roaming process. The reassociation frame contains an additional field called Current AP Address. This address is the BSSID of the original AP that the client is leaving.&#34;
+            },
+            {
+            &#34;q&#34;: &#34;Which of the following contains only LLC data and the IP packet but does not include any 802.11 data?&#34;,
+            &#34;a&#34;: [
+            {&#34;option&#34;: &#34;MPDU&#34;, &#34;correct&#34;: false },
+            {&#34;option&#34;: &#34;PPDU&#34;, &#34;correct&#34;: false },
+            {&#34;option&#34;: &#34;PSDU&#34;, &#34;correct&#34;: false },
+            {&#34;option&#34;: &#34;MSDU&#34;, &#34;correct&#34;: true },
+            {&#34;option&#34;: &#34;MMPDU&#34;, &#34;correct&#34;: false },
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, An IP packet consists of layer 3–7 information. The MAC Service Data Unit (MSDU) contains data from the LLC sublayer and/or any number of layers above the Data-Link layer. The MSDU is the payload found inside the body of 802.11 data frames.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;Which of the following are protection mechanisms? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;NAV back-off&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;RTS/CTS&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;RTS-to-Self&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;CTS-to-Self&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;WEP encryption&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, RTS/CTS and CTS-to-Self provide 802.11g protection mechanisms, sometimes referred to as mixed-mode support. NAV back-off and RTS-to-Self do not exist. WEP encryption provides data security.&#34;
+            },
+            {
+            &#34;q&#34;: &#34;The presence of what type of transmissions can trigger the protection mechanism within an ERP basic service set? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;Association of an HR-DSSS client&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;Association of an ERP-OFDM client&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;HR-DSSS beacon frame&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;ERP beacon frame with the NonERP_Present bit set to 1&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;Association of an FHSS client&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, An ERP AP signals for the use of the protection mechanism in the ERP information element in the beacon frame. If a non-ERP STA associates to an ERP AP, the ERP AP will enable the NonERP_Present bit in its own beacons, enabling protection mechanisms in its BSS. In other words, an HR-DSSS (802.11b) client association will trigger protection. If an ERP AP hears a beacon with only an 802.11b or 802.11 supported rate set from another AP or an IBSS STA, it will enable the NonERP_Present bit in its own beacons, enabling protection mechanisms in its BSS.&#34;
+            },
+            {
+            &#34;q&#34;: &#34;Which of the following information is included in a probe response frame? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;Time stamp&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;Supported data rates&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;Service set capabilities&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;SSID&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;Traffic indication map&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, The probe response contains the same information as the beacon frame, with the exception of the traffic indication map.&#34;
+            },
+            {
+            &#34;q&#34;: &#34;Which of the following are true about beacon management frames? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;Beacons can be disabled to hide the network from intruders.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;Time-stamp information is used by the clients to synchronize their clocks.&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;In a BSS, clients share the responsibility of transmitting the beacons.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;Beacons can contain vendor-proprietary information.&#34;, &#34;correct&#34;: true }
+            ],
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, Beacons cannot be disabled. Clients use the time-stamp information from the beacon to synchronize with the other stations on the wireless network. Only APs send beacons in a BSS; client stations send beacons in an IBSS. Beacons can contain proprietary information.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;If WMM-PS is not supported, after a station sees its AID set to 1 in the TIM, what typically is the next frame that the station transmits?&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;CTS&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;PS-Poll&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;ATIM&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;ACK&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, . If a station finds its AID in the TIM, there is unicast data on the AP that the station needs to stay awake for and request to have downloaded. This request is performed by a PS-Poll frame.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;When a station sends an RTS, the Duration/ID field notifies the other stations that they must set their NAV timers to which of the following values?&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;213 microseconds&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;The time necessary to transmit the DATA and ACK frames&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;The time necessary to transmit the CTS frame&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;The time necessary to transmit the CTS, DATA, and ACK frames&#34;, &#34;correct&#34;: true }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, When the RTS frame is sent, the value of the Duration/ID field is equal to the time necessary for the CTS, DATA, and ACK frames to be transmitted.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;How does a client station indicate that it is using Power Save mode?&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;It transmits a frame to the AP with the Sleep field set to 1.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;It transmits a frame to the AP with the Power Management field set to 1.&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;Using DTIM, the AP determines when the client station uses Power Save mode.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;It doesn&#39;t need to, because Power Save mode is the default.&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong,  When the client station transmits a frame with the Power Management field set to 1, it is enabling Power Save mode. The DTIM does not enable Power Save mode; it only notifies clients to stay awake in preparation for a multicast or broadcast.&#34;
+            },
+            {
+            &#34;q&#34;: &#34;What would cause an 802.11 station to retransmit a unicast frame? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;The transmitted unicast frame was corrupted.&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;The ACK frame from the receiver was corrupted.&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;The receiver&#39;s buffer was full.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;The transmitting station will never attempt to retransmit the data frame.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;The transmitting station will send a retransmit notification.&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, The receiving station may have received the data, but the returning ACK frame may have become corrupted and the original unicast frame will have to be retransmitted. If the unicast frame becomes corrupted for any reason, the receiving station will not send an ACK.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;If a station is in Power Save mode, how does it know that the AP has buffered unicast frames waiting for it?&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;By examining the PS-Poll frame&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;By examining the TIM field&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;When it receives an ATIM&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;When the Power Management bit is set to 1&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;From the DTIM interval&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, The PS-Poll frame is used by the station to request cached data. The ATIM is used to notify stations in an IBSS of cached data. The Power Management bit is used by the station to notify the AP that the station is going into Power Save mode. The DTIM is used to indicate to client stations how often to wake up to receive buffered broadcast and multicast frames. The traffic indication map (TIM) is a field in the beacon frame used by the AP to indicate that there are buffered unicast frames for clients in Power Save mode.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;When is an ERP (802.11g) AP required by the IEEE 802.11-2012 standard to respond to probe request frames from nearby HR-DSSS (802.11b) stations? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;When the probe request frames contain a null SSID value&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;When the AP supports only ERP-OFDM data rates&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;When the AP supports only HR/DSSS data rates&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;When the Power Management bit is set to 1&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;When the probe request frames contain the correct SSID value&#34;, &#34;correct&#34;: true }
+            ],
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong,  All 802.11 APs are required to respond to directed probe request frames that contain the correct SSID value. The AP must also respond to null probe request frames that contain a blank SSID value. Some vendors offer the capability to respond to null probe requests with a null probe response.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;Which of the following are true about scanning? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;There are two types of scanning: passive and active.&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;Stations must transmit probe requests in order to learn about local APs.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;The 802.11 standard allows APs to ignore probe requests for security reasons.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;It is common for stations to continue to send probe requests after being associated to an AP.&#34;, &#34;correct&#34;: true }
+            ],
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, There are two types of scanning: passive, which occurs when a station listens to the beacons to discover an AP, and active, which occurs when a station sends probe requests looking for APs. Stations send probe requests only if they are performing an active scan. After a station is associated, it is common for the station to continue to learn about nearby APs. All client stations maintain a “known AP” list that is constantly updated by active scanning.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;Given that an 802.11 MAC header can have as many as four MAC addresses, which type of addresses are not found in an 802.3 MAC header? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;SA&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;BSSID&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;DA&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;RA&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;TA&#34;, &#34;correct&#34;: true }
+            ],
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong,  Although there are similarities, the addressing used by 802.11 MAC frames is much more complex than Ethernet frames. 802.3 frames have only a source address (SA) and destination address (DA) in the layer 2 header. The four MAC addresses used by an 802.11 frame can be used as five different types of addresses: receiver address (RA), transmitter address (TA), basic service set identifier (BSSID), destination address (DA), and source address (SA).&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;When a client station is first powered on, what is the order of frames generated by the client station and AP?&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;Probe request/probe response, association request/response, authentication request/response&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;Probe request/probe response, authentication request/response, association request/response&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;Association request/response, authentication request/response, probe request/probe response&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;Authentication request/response, association request/response, probe request/probe response&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, When the client first attempts to connect to an AP, it will first send a probe request and listen for a probe response. After it receives a probe response, it will attempt to authenticate to the AP and then associate to the network.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;WLAN users have recently complained about gaps in audio and problems with the push-to-talk capabilities with the ACME Company&#39;s VoWiFi phones. What could be the cause of this problem?&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;Misconfigured TIM setting&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;Misconfigured DTIM setting&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;Misconfigured ATIM setting&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;Misconfigured BTIM setting&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, The delivery traffic indication message (DTIM) is used to ensure that all stations using power management are awake when multicast or broadcast traffic is sent. The DTIM interval is important for any application that uses multicasting. For example, many VoWiFi vendors support push-to-talk capabilities that send VoIP traffic to a multicast address. A misconfigured DTIM interval would cause performance issues during a push-to-talk multicast.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;The WLAN help desk gets a call that all of the sudden, all of the HR-DSSS (802.11b) VoWiFi phones cannot connect to any of the ERP (802.11g) lightweight APs that are managed by a multiple-channel architecture WLAN controller. All the laptops with ERP (802.11g) radios can still connect. What are the possible causes of this problem? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;The WLAN admin disabled the 1, 2, 5.5, and 11 Mbps data rates on the controller.&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;The WLAN admin disabled the 6 and 9 Mbps data rates on the controller.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;The WLAN admin enabled the 6 and 9 Mbps data rates on the controller as basic rates.&#34;, &#34;correct&#34;: true },
+            { &#34;option&#34;: &#34;The WLAN admin configured all the APs on channel 6.&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, An ERP (802.11g) AP is backward compatible with HR-DSSS and supports the data rates of 1, 2, 5.5, and 11 Mbps as well as the ERP-OFDM data rates of 6, 9, 12, 18, 24, 36, 48, and 54 Mbps. If a WLAN admin disabled the 1, 2, 5.5, and 11 Mbps data rates, backward compatibility will effectively be disabled and the HR-DSSS clients will not be able to connect. The 802.11-2012 standard defines the use of basic rates, which are required rates. If a client station does not support any of the basic rates used by an AP, the client station will be denied association to the BSS. If a WLAN admin configured the ERP-OFDM data rates of 6 and 9 Mbps as basic rates, the HR-DSSS clients would be denied association because they do not support those rates.&#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;In a multiple-channel architecture, roaming is controlled by the client station and occurs based on a set of proprietary rules determined by the manufacturer of the wireless radio. Which of the following parameters are often used when making the decision to roam? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;Received signal level&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;Distance&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;SNR&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;WMM access categories&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, &#34;
+            },
+            {
+            &#34;q&#34;: &#34;What are some of the advantages of using U-APSD and WMM-PS power management over legacy power-management methods? (Choose all that apply.)&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;Applications control doze time and trigger frames.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;U-APSD APs transmit all voice and video data immediately.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;The client does not have to wait for a beacon to request data.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;Downlink traffic is sent in a frame burst.&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;Data frames are used as trigger frames. PS-Poll frames are not used.&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, &#34;
+            },
+
+            {
+            &#34;q&#34;: &#34;WMM-PS is based on which 802.11-2012 power-management method?&#34;,
+            &#34;a&#34;: [
+            { &#34;option&#34;: &#34;S-APSD&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;U-APSD&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;PSMP&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;SM Power Save&#34;, &#34;correct&#34;: false },
+            { &#34;option&#34;: &#34;PS-Poll&#34;, &#34;correct&#34;: false }
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, &#34;
+            },
+
+    ]
+    };
+
     $(function () {
     $(&#39;#chapter7&#39;).slickQuiz({json: chapter7});
+    $(&#39;#chapter8&#39;).slickQuiz({json: chapter8});
+    $(&#39;#chapter9&#39;).slickQuiz({json: chapter9});
     });
     &lt;/script&gt;
 </description>
