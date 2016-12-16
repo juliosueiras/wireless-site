@@ -332,7 +332,251 @@ var chapter8 = {
         "name":    "",
         "main":    "Chapter 8 Quiz",
     },
-    "questions": []
+    "questions": [
+    {
+    "q": "DCF is also known as what? (Choose all that apply.)",
+    "a": [
+    { "option": "Carrier Sense Multiple Access with Collision Detection (CSMA/CD)", "correct": false },
+    { "option": "Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA)", "correct": true },
+    { "option": "Data Control Function", "correct": false },
+    { "option": "Distributed Coordination Function", "correct": true }
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, DCF is an abbreviation for Distributed Coordination Function. CSMA/CA is an 802.11 media access control method that is part of DCF. CSMA/CD is used by 802.3, not 802.11. There is no such thing as Data Control Function."
+    },
+    {
+    "q": "802.11 collision detection is handled using which technology?",
+    "a": [
+    { "option": "Network allocation vector (NAV).", "correct": false },
+    { "option": "Clear channel assessment (CCA).", "correct": false },
+    { "option": "Duration/ID value.", "correct": false },
+    { "option": "Receiving an ACK from the destination station.", "correct": false },
+    { "option": "Positive collision detection cannot be determined.", "correct": true }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong,  802.11 technology does not use collision detection. If an ACK frame is not received by the original transmitting radio, the unicast frame is not acknowledged and will have to be retransmitted. This process does not specifically determine whether a collision occurs. Failure to receive an ACK frame from the receiver means that either a unicast frame was not received by the destination station or the ACK frame was not received, but it cannot positively determine the cause. It may be due to collision or to other reasons such as high noise level. All of the other options are used to help prevent collisions."
+    },
+    {
+    "q": "ACK and CTS-to-self frames follow which interframe space?",
+    "a": [
+    { "option": "EIFS", "correct": false },
+    { "option": "DIFS", "correct": false },
+    { "option": "PIFS", "correct": false },
+    { "option": "SIFS", "correct": true },
+    { "option": "LIFS", "correct": false }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, ACK frames and CTS-to-self frames follow a SIFS. LIFS do not exist."
+    },
+    {
+    "q": "The carrier sense portion of CSMA/CA is performed by using which of the following methods? (Choose all that apply.)",
+    "a": [
+    { "option": "Virtual carrier sense", "correct": true },
+    { "option": "Physical carrier sense", "correct": true },
+    { "option": "Channel sense window", "correct": false },
+    { "option": "Clear channel assessment", "correct": true }
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, The NAV timer maintains a prediction of future traffic on the medium based on duration value information seen in a previous frame transmission. Virtual carrier sense uses the NAV to determine medium availability. Physical carrier sense checks the RF medium for carrier availability. Clear channel assessment is another name for physical carrier sense. Channel sense window does not exist."
+    },
+
+    {
+    "q": "After the station has performed the carrier sense and determined that no other devices are transmitting for a period of a DIFS interval, what is the next step for the station?",
+    "a": [
+    { "option": "Wait the necessary number of slot times before transmitting if a random backoff value has already been selected.", "correct": false },
+    { "option": "Begin transmitting.", "correct": false },
+    { "option": "Select a random backoff value.", "correct": true },
+    { "option": "Begin the random backoff timer.", "correct": false }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, The first step is to select a random backoff value. After the value is selected, it is multiplied by the slot time. The random backoff timer then begins counting down the number of slot times. When the number reaches 0, the station can begin transmitting."
+    },
+
+    {
+    "q": "If PCF is implemented, it can function in which of the following network environments? (Choose all that apply.)",
+    "a": [
+    { "option": "Ad hoc mode", "correct": false },
+    { "option": "BSS", "correct": true },
+    { "option": "IBSS", "correct": false },
+    { "option": "Infrastructure mode", "correct": true },
+    { "option": "BSA", "correct": false }
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, PCF requires an access point. Ad hoc mode and an independent basic service set (IBSS) are the same and do not use an access point. A basic service set (BSS) is a WLAN topology, where 802.11 client stations communicate through an access point. Infrastructure mode is the default client station mode that allows clients to communicate via an access point. Basic service area (BSA) is the area of coverage of a basic service set."
+    },
+    {
+    "q": "Which of the following terms are affiliated with the virtual carrier sense mechanism? (Choose all that apply.)",
+    "a": [
+    { "option": "Contention window", "correct": false },
+    { "option": "Network allocation vector", "correct": true },
+    { "option": "Random backoff time", "correct": false },
+    { "option": "Duration/ID field", "correct": true }
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, The Duration/ID field is used to set the network allocation vector (NAV), which is a part of the virtual carrier sense process. The contention window and random backoff time are part of the backoff process that is performed after the carrier sense process."
+    },
+    {
+    "q": "The goal of allocating equal time as opposed to equal opportunity is known as what?",
+    "a": [
+    { "option": "Access fairness", "correct": false },
+    { "option": "Opportunistic media access", "correct": false },
+    { "option": "CSMA/CA", "correct": false },
+    { "option": "Airtime fairness", "correct": true }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, The goal of airtime fairness is to allocate equal time, as opposed to equal opportunity. Access fairness and opportunistic media access do not exist. CSMA/CA is the normal media access control mode for Wi-Fi devices."
+    },
+    {
+    "q": "CSMA/CA and DCF define which mechanisms that attempt to ensure that only one 802.11 radio can transmit on the half-duplex RF medium? (Choose all that apply.)",
+    "a": [
+    { "option": "Random backoff timer", "correct": true },
+    { "option": "NAV", "correct": true },
+    { "option": "CCMP", "correct": false },
+    { "option": "CCA", "correct": true },
+    { "option": "Interframe spacing", "correct": true }
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, DCF defines four checks and balances of CSMA/CA and DCF to ensure that only one 802.11 radio is transmitting on the half-duplex medium. Virtual carrier sense (NAV), physical carrier sense (CCA), interframe spacing, and the random backoff timer all work together. CCMP is the encryption protocol that was introduced with 802.11i."
+    },
+    {
+    "q": "The Wi-Fi Alliance certification called Wi-Fi Multimedia (WMM) is based on which media access method defined by the 802.11-2012 standard?",
+    "a": [
+    { "option": "DCF", "correct": false },
+    { "option": "PCF", "correct": false },
+    { "option": "EDCA", "correct": true },
+    { "option": "HCCA", "correct": false },
+    { "option": "HSRP", "correct": false }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, Currently, WMM is based on EDCA mechanisms defined by the 802.11e amendment, which is now part of the 802.11-2012 standard. The WMM certification provides for traffic prioritization via four access categories. EDCA is a subfunction of Hybrid Coordination Function (HCF). The other subfunction of HCF is HCCA."
+    },
+    {
+    "q": "Hybrid Coordination Function (HCF) defines what allotted period of time in which a station can transmit multiple frames?",
+    "a": [
+    { "option": "Block acknowledgment", "correct": false },
+    { "option": "Polling", "correct": false },
+    { "option": "Virtual carrier sense", "correct": false },
+    { "option": "Physical carrier sense", "correct": false },
+    { "option": "TXOP", "correct": true }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, HCF defines the ability for an 802.11 radio to send multiple frames when transmitting on the RF medium. When an HCF-compliant radio contends for the medium, it receives an allotted amount of time to send frames called a transmit opportunity (TXOP). During this TXOP, an 802.11 radio may send multiple frames in what is called a frame burst."
+    },
+    {
+    "q": "WMM is based on EDCA and provides for traffic prioritization via which of the following access categories? (Choose all that apply.)",
+    "a": [
+    { "option": "WMM Voice priority", "correct": true },
+    { "option": "WMM Video priority", "correct": true },
+    { "option": "WMM Audio priority", "correct": false },
+    { "option": "WMM Best Effort priority", "correct": true },
+    { "option": "WMM Background priority", "correct": true }
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, WMM Audio priority does not exist. The WMM certification provides for traffic prioritization via the four access categories of Voice, Video, Best Effort, and Background."
+    },
+    {
+    "q": "The 802.11e amendment (now part of the 802.11-2012 standard) defines which of the following medium access methods to support QoS requirements? (Choose all that apply.)",
+    "a": [
+    { "option": "Distributed Coordination Function (DCF)", "correct": false },
+    { "option": "Enhanced Distributed Channel Access (EDCA)", "correct": true },
+    { "option": "Hybrid Coordination Function (HCF)", "correct": true },
+    { "option": "Point Coordination Function (PCF)", "correct": false },
+    { "option": "Hybrid Coordination Function Controlled Access (HCCA)", "correct": true }
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, DCF and PCF were defined in the original 802.11 standard. The 802.11e quality of service amendment added a new coordination function to 802.11 medium contention, known as Hybrid Coordination Function (HCF). The 802.11e amendment and HCF have since been incorporated into the 802.11-2012 standard. HCF combines capabilities from both DCF and PCF and adds enhancements to them to create two channel access methods, HCF Controller Channel Access (HCCA) and Enhanced Distributed Channel Access (EDCA)."
+    },
+    {
+    "q": "What information that comes from the wired network is used to assign traffic into access categories on a WLAN controller?",
+    "a": [
+    { "option": "Duration/ID", "correct": false },
+    { "option": "802.1D priority tags", "correct": true },
+    { "option": "Destination MAC address", "correct": false },
+    { "option": "Source MAC address", "correct": false }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, The EDCA medium access method provides for the prioritization of traffic via the use of 802.1D priority tags. 802.1D tags provide a mechanism for implementing quality of service (QoS) at the MAC level. Different classes of service are available, represented in a 3-bit user priority field in an IEEE 802.1Q header added to an Ethernet frame. 802.1D priority tags from the Ethernet side are used to direct traffic to different access-category queues."
+    },
+    {
+    "q": "What are the two reasons that 802.11 radios use physical carrier sense? (Choose all that apply.)",
+    "a": [
+    { "option": "To synchronize incoming transmissions", "correct": true },
+    { "option": "To synchronize outgoing transmissions", "correct": false },
+    { "option": "To reset the NAV", "correct": false },
+    { "option": "To start the random backoff timer", "correct": false },
+    { "option": "To assess the RF medium", "correct": true }
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, The first purpose is to determine whether a frame transmission is inbound for a station to receive. If the medium is busy, the radio will attempt to synchronize with the transmission. The second purpose is to determine whether the medium is busy before transmitting. This is known as the clear channel assessment (CCA). The CCA involves listening for 802.11 RF transmissions at the Physical layer. The medium must be clear before a station can transmit."
+    },
+    {
+    "q": "What CSMA/CA mechanism is used for medium contention? (Choose all that apply.)",
+    "a": [
+    { "option": "NAV", "correct": true },
+    { "option": "CCA", "correct": true },
+    { "option": "Random backoff timer", "correct": true },
+    { "option": "Contention window", "correct": true }
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong,  An 802.11 radio uses a random backoff algorithm to contend for the medium during a window of time known as the contention window. The contention window is essentially a final countdown timer and is also known as the random backoff timer. The NAV timer and the clear channel assessment (CCA) are also used in the medium contention process to determine the availability of the medium."
+    },
+    {
+    "q": "Which field in the MAC header of an 802.11 frame resets the NAV timer for all listening 802.11 stations?",
+    "a": [
+    { "option": "NAV", "correct": false },
+    { "option": "Frame control", "correct": false },
+    { "option": "Duration/ID", "correct": true },
+    { "option": "Sequence number", "correct": false },
+    { "option": "Strictly ordered bit", "correct": false }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, When the listening radio hears a frame transmission from another station, it looks at the header of the frame and determines whether the Duration/ID field contains a Duration value or an ID value. If the field contains a Duration value, the listening station will set its NAV timer to this value."
+    },
+    {
+    "q": "The EDCA medium access method provides for the prioritization of traffic via priority queues that are matched to eight 802.1D priority tags. What are the EDCA priority queues called?",
+    "a": [
+    { "option": "TXOP", "correct": false },
+    { "option": "Access categories", "correct": true },
+    { "option": "Priority levels", "correct": false },
+    { "option": "Priority bits", "correct": false },
+    { "option": "PT", "correct": false }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, Enhanced Distributed Channel Access provides differentiated access for stations by using four access categories The EDCA medium access method provides for the prioritization of traffic via the four access categories that are aligned to eight 802.1D priority tags."
+    },
+    {
+    "q": "ACKs are required for which of the following frames?",
+    "a": [
+    { "option": "Unicast", "correct": true },
+    { "option": "Broadcast", "correct": false },
+    { "option": "Multicast", "correct": false },
+    { "option": "Anycast", "correct": false }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, ACKS are used for delivery verification of unicast 802.11 frames. Broadcast and multicast frames do not require an acknowledgment. Anycast frames do not exist."
+    },
+    {
+    "q": "What QoS mechanism can be used to reduce medium contention overhead during a frame burst of low-latency traffic?",
+    "a": [
+    { "option": "Delayed Block ACK", "correct": false },
+    { "option": "Contention period", "correct": false },
+    { "option": "Contention window", "correct": false },
+    { "option": "Contention-free period", "correct": false },
+    { "option": "Immediate Block ACK", "correct": true }
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, A Block ACK improves channel efficiency by aggregating several acknowledgments into one single acknowledgment frame. There are two types of Block ACK mechanisms: immediate and delayed. The immediate Block ACK is designed for use with low-latency traffic, whereas the delayed Block ACK is more suitable for latency-tolerant traffic."
+    }
+    ]
     }
 
 
@@ -607,3 +851,17 @@ var chapter9 = {
     });
     </script>
 ++++
+
+## Diagram
+
+### LTE
+
+image::/lte.jpg[]
+
+### CSMA/CA
+
+image::/csma.jpg[]
+
+### Immediate Block Acknowledgement
+
+image::/block.jpg[]
