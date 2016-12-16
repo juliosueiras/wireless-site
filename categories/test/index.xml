@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Blog Template for GitHub Pages</title>
-    <link>localhost:1313</link>
+    <link>https://juliosueiras.github.io/wireless-site/categories/test/index.xml</link>
     <description>Recent content on Hugo Blog Template for GitHub Pages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="#ZgotmplZ" rel="self" type="application/rss+xml" />
+    <atom:link href="https://juliosueiras.github.io/wireless-site/categories/test/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Wireless Review</title>
-      <link>localhost:1313</link>
+      <link>https://juliosueiras.github.io/wireless-site/posts/newest/</link>
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>localhost:1313</guid>
+      <guid>https://juliosueiras.github.io/wireless-site/posts/newest/</guid>
       <description>&lt;div id=&#34;slickQuiz&#34;&gt;
 &lt;h1 class=&#34;quizName&#34;&gt;&lt;!-- where the quiz name goes --&gt;&lt;/h1&gt;
 
