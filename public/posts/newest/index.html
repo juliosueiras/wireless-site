@@ -662,6 +662,7 @@ var chapter9 = {
             { "option": "The WLAN admin enabled the 6 and 9 Mbps data rates on the controller as basic rates.", "correct": true },
             { "option": "The WLAN admin configured all the APs on channel 6.", "correct": false }
             ],
+            "select_any": false,
             "correct": "Correct",
             "incorrect": "Wrong, An ERP (802.11g) AP is backward compatible with HR-DSSS and supports the data rates of 1, 2, 5.5, and 11 Mbps as well as the ERP-OFDM data rates of 6, 9, 12, 18, 24, 36, 48, and 54 Mbps. If a WLAN admin disabled the 1, 2, 5.5, and 11 Mbps data rates, backward compatibility will effectively be disabled and the HR-DSSS clients will not be able to connect. The 802.11-2012 standard defines the use of basic rates, which are required rates. If a client station does not support any of the basic rates used by an AP, the client station will be denied association to the BSS. If a WLAN admin configured the ERP-OFDM data rates of 6 and 9 Mbps as basic rates, the HR-DSSS clients would be denied association because they do not support those rates."
             },
@@ -669,38 +670,40 @@ var chapter9 = {
             {
             "q": "In a multiple-channel architecture, roaming is controlled by the client station and occurs based on a set of proprietary rules determined by the manufacturer of the wireless radio. Which of the following parameters are often used when making the decision to roam? (Choose all that apply.)",
             "a": [
-            { "option": "Received signal level", "correct": false },
+            { "option": "Received signal level", "correct": true },
             { "option": "Distance", "correct": false },
-            { "option": "SNR", "correct": false },
+            { "option": "SNR", "correct": true },
             { "option": "WMM access categories", "correct": false }
             ],
+            "select_any": false,
             "correct": "Correct",
-            "incorrect": "Wrong, "
+            "incorrect": "Wrong,  The amplitude of the received signals from the APs is usually the main variable when clients make a roaming decision. Client roaming mechanisms are often based on RSSI values, including received signal levels and signal-to-noise ratio (SNR). Distance and WMM access categories have nothing to do with the client's decision to roam to a new AP."
             },
             {
             "q": "What are some of the advantages of using U-APSD and WMM-PS power management over legacy power-management methods? (Choose all that apply.)",
             "a": [
-            { "option": "Applications control doze time and trigger frames.", "correct": false },
+            { "option": "Applications control doze time and trigger frames.", "correct": true },
             { "option": "U-APSD APs transmit all voice and video data immediately.", "correct": false },
-            { "option": "The client does not have to wait for a beacon to request data.", "correct": false },
-            { "option": "Downlink traffic is sent in a frame burst.", "correct": false },
-            { "option": "Data frames are used as trigger frames. PS-Poll frames are not used.", "correct": false }
+            { "option": "The client does not have to wait for a beacon to request data.", "correct": true },
+            { "option": "Downlink traffic is sent in a frame burst.", "correct": true },
+            { "option": "Data frames are used as trigger frames. PS-Poll frames are not used.", "correct": true }
             ],
+            "select_any": false,
             "correct": "Correct",
-            "incorrect": "Wrong, "
+            "incorrect": "Wrong, Applications now control the power-save management behavior by setting doze periods and sending trigger frames. Clients using time-sensitive applications will send triggers to the AP frequently, while clients using more latency-tolerant applications will have a longer doze period. The trigger and delivery method eliminates the need for PS-Poll frames. The client can request to download buffered traffic and does not have to wait for a beacon frame. All the downlink application traffic is sent in a faster frame burst during the AP's TXOP."
             },
 
             {
             "q": "WMM-PS is based on which 802.11-2012 power-management method?",
             "a": [
             { "option": "S-APSD", "correct": false },
-            { "option": "U-APSD", "correct": false },
+            { "option": "U-APSD", "correct": true },
             { "option": "PSMP", "correct": false },
             { "option": "SM Power Save", "correct": false },
             { "option": "PS-Poll", "correct": false }
             ],
             "correct": "Correct",
-            "incorrect": "Wrong, "
+            "incorrect": "Wrong, The IEEE 802.11-2007 standard defines an enhanced power-management method called automatic power save delivery (APSD). The two APSD methods that are defined are scheduled automatic power save delivery (S-APSD) and unscheduled automatic power save delivery (U-APSD). The Wi-Fi Alliance's WMM Power Save (WMM-PS) certification is based on U-APSD."
             },
 
     ]
