@@ -1,5 +1,5 @@
-#baseurl = "https://juliosueiras.github.io/wireless-site/"
-baseurl = "localhost:1313"
+baseurl = "https://juliosueiras.github.io/wireless-site/"
+# baseurl = "localhost:1313"
 languageCode = "en-us"
 contentdir = "content"
 layoutdir = "layouts"
