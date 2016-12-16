@@ -125,7 +125,8 @@
                 <h1>Wireless Review</h1>
                 
 
-<div id="slickQuiz">
+<h1 id="_chapter_7" class="sect0">Chapter 7</h1>
+<div id="chapter7">
 <h1 class="quizName"><!-- where the quiz name goes --></h1>
 
 <div class="quizArea">
@@ -147,47 +148,252 @@
 </div>
 </div>
 
+
 <script>
-var quizJSON = {
+var chapter7 = {
     "info": {
         "name":    "",
-        "main":    "Wireless Review Quiz",
+        "main":    "Chapter 7 Quiz",
     },
     "questions": [
-        { // Question 1 - Multiple Choice, Single True Answer
-            "q": "What number is the letter A in the English alphabet?",
+        {
+            "q": "An 802.11 wireless network name is known as which type of address? (Choose all that apply.)",
             "a": [
-                {"option": "8",      "correct": false},
-                {"option": "14",     "correct": false},
-                {"option": "1",      "correct": true},
-                {"option": "23",     "correct": false} // no comma here
+                {"option": "BSSID",      "correct": false},
+                {"option": "MAC Address",     "correct": false},
+                {"option": "IP Address",      "correct": false},
+                {"option": "SSID",     "correct": true},
+                {"option": "Extended service set identifier", "correct": true}
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+            "select_any": false,
+            "correct": "Correct",
+            "incorrect": "Wrong, The service set identifier (SSID) is a 32-character, case-sensitive, logical name used to identify a wireless network. An extended service set identifier (ESSID) is the logical network name used in an extended service set. ESSID is often synonymous with SSID."
         },
-        { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "Which of the following best represents your preferred breakfast?",
+        {
+            "q": "Which two 802.11 topologies require the use of an access point?",
             "a": [
-                {"option": "Bacon and eggs",               "correct": false},
-                {"option": "Fruit, oatmeal, and yogurt",   "correct": true},
-                {"option": "Leftover pizza",               "correct": false},
-                {"option": "Eggs, fruit, toast, and milk", "correct": true} // no comma here
+                {"option": "WPAN",      "correct": false},
+                {"option": "IBSS",     "correct": false},
+                {"option": "Basic service set",     "correct": true},
+                {"option": "Ad hoc",      "correct": false},
+                {"option": "ESS",     "correct": true}
             ],
-            "select_any": true,
-            "correct": "<p><span>Nice!</span> Your cholestoral level is probably doing alright.</p>",
-            "incorrect": "<p><span>Hmmm.</span> You might want to reconsider your options.</p>" // no comma here
-        }
-    ]
+            "select_any": false,
+            "correct": "Correct",
+            "incorrect": "Wrong, The 802.11 standard defines four service sets, or topologies. A basic service set (BSS) is defined as one AP and associated clients. An extended service set (ESS) is defined as one or more basic service sets connected by a distribution system medium. An independent basic service set (IBSS) does not use an AP and consists solely of client stations (STAs)."
+        },
+        {
+            "q": "The 802.11 standard defines which medium to be used in a distribution system (DS)?",
+            "a": [
+                {"option": "802.3 Ethernet",      "correct": false},
+                {"option": "802.15",     "correct": false},
+                {"option": "802.5 token ring",      "correct": false},
+                {"option": "Star-bus topology",     "correct": false},
+                {"option": "None of the above",     "correct": true}
+            ],
+            "correct": "Correct",
+            "incorrect": "Wrong, By design, the 802.11 standard does not specify a medium to be used in the distribution system. The distribution system medium (DSM) may be an 802.3 Ethernet backbone, an 802.5 token ring network, a wireless medium, or any other medium."
+        },
+
+    { "q":"Which option is a wireless computer topology used for communication of computer devices within close proximity of a person?",
+    "a": [
+    {"option":"WWAN", "correct": false},
+    {"option":"Bluetooth", "correct": false},
+    {"option":"ZigBee", "correct": false},
+    {"option":"WPAN", "correct": true},
+    {"option":"WMAN", "correct": false}
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, A wireless personal area network (WPAN) is a short-distance wireless topology. Bluetooth and ZigBee are technologies that are often used in WPANs."
+    },
+    { "q":"Which 802.11 service set may allow for client roaming?",
+    "a": [
+    {"option":"ESS", "correct": true},
+    {"option":"Basic service set", "correct": false},
+    {"option":"IBSS", "correct": false},
+    {"option":"Spread spectrum service set", "correct": false}
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, The most common implementation of an extended service set (ESS) has access points with partially overlapping coverage cells. The purpose behind an ESS with partially overlapping coverage cells is seamless roaming."
+    },
+    { "q":"What factors might affect the size of a BSA coverage area of an access point? (Choose all that apply.)",
+    "a": [
+    {"option":"Antenna gain", "correct": true},
+    {"option":"CSMA/CA", "correct": false},
+    {"option":"Transmission power", "correct": true},
+    {"option":"Indoor/outdoor surroundings", "correct": true},
+    {"option":"Distribution system", "correct": false}
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong,  The size and shape of a basic service area can depend on many variables, including AP transmit power, antenna gain, and physical surroundings."
+    },
+    { "q":"What is the default configuration mode that allows an AP radio to operate in a basic service set?",
+    "a": [
+    {"option":"Scanner", "correct": false},
+    {"option":"Repeater", "correct": false},
+    {"option":"Root", "correct": true},
+    {"option":"Access", "correct": false},
+    {"option":"Nonroot", "correct": false}
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong,  The normal default setting of an access point is root mode, which allows the AP to transfer data back and forth between the DS and the 802.11 wireless medium. The default root configuration of an AP allows it to operate inside a basic service set (BSS)."
+    },
+    { "q":"Which terms describe an 802.11 topology involving STAs but no access points? (Choose all that apply.)",
+    "a": [
+    {"option":"BSS", "correct": false},
+    {"option":"Ad hoc", "correct": true},
+    {"option":"DSSS", "correct": false},
+    {"option":"Infrastructure", "correct": false},
+    {"option":"IBSS", "correct": true},
+    {"option":"Peer-to-peer", "correct": true}
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, The 802.11 standard defines an independent basic service set (IBSS) as a service set using client peer-to-peer communications without the use of an AP. Other names for an IBSS include ad hoc and peer-to-peer. "
+    },
+    { "q":"STAs operating in Infrastructure mode may communicate in which of the following scenarios? (Choose all that apply.)",
+    "a": [
+    {"option":"802.11 frame exchanges with other STAs via an AP", "correct": true},
+    {"option":"802.11 frame exchanges with an AP in scanner mode", "correct": false},
+    {"option":"802.11 frame peer-to-peer exchanges directly with other STAs", "correct": false},
+    {"option":"Frame exchanges with network devices on the DSM", "correct": true},
+    {"option":"All of the above", "correct": false}
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong,Clients that are configured in Infrastructure mode may communicate via the AP with other wireless client stations within a BSS. Clients may also communicate through the AP with other networking devices that exist on the distribution system medium, such as a server or a wired desktop. "
+    },
+    { "q":"Which of these are included in the four topologies defined by the 802.11-2012 standard? (Choose all that apply.)",
+    "a": [
+    {"option":"DSSS", "correct": false},
+    {"option":"ESS", "correct": true},
+    {"option":"BSS", "correct": true},
+    {"option":"IBSS", "correct": true},
+    {"option":"FHSS", "correct": false}
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, The four topologies, or service sets, defined by the 802.11-2012 standard are basic service set (BSS), extended service set (ESS), independent basic service set (IBSS), and mesh basic service set (MBSS). DSSS and FHSS are spread spectrum technologies."
+    },
+    { "q":"Which wireless topology provides citywide wireless coverage?",
+    "a": [
+    {"option":"WMAN", "correct": true},
+    {"option":"WLAN", "correct": false},
+    {"option":"WPAN", "correct": false},
+    {"option":"WAN", "correct": false},
+    {"option":"WWAN", "correct": false}
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, A wireless metropolitan area network (WMAN) provides coverage to a metropolitan area such as a city and the surrounding suburbs."
+    },
+    { "q":"At which layer of the OSI model will a BSSID address be used?",
+    "a": [
+    {"option":"Physical", "correct": false},
+    {"option":"Network", "correct": false},
+    {"option":"Session", "correct": false},
+    {"option":"Data-Link", "correct": true},
+    {"option":"Application", "correct": false}
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, The basic service set identifier (BSSID) is a 48-bit (6-octet) MAC address. MAC addresses exist at the MAC sublayer of the Data-Link layer of the OSI model."
+    },
+    { "q":"The basic service set identifier address can be found in which topologies? (Choose all that apply.)",
+    "a": [
+    {"option":"FHSS", "correct": false},
+    {"option":"IBSS", "correct": true},
+    {"option":"ESS", "correct": true},
+    {"option":"HR-DSSS", "correct": false},
+    {"option":"BSS", "correct": true}
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, The BSSID is the layer 2 identifier of either a BSS or an IBSS service set. The 48-bit (6-octet) MAC address of an access point's radio is the basic service set identifier (BSSID) within a BSS. An ESS topology utilizes multiple access points, thus the existence of multiple BSSIDs. In an IBSS network, the first station that powers up randomly generates a virtual BSSID in the MAC address format. FHSS and HR-DSSS are spread spectrum technologies."
+    },
+    { "q":"Which 802.11 service set defines mechanisms for mesh networking?",
+    "a": [
+    {"option":"BSS", "correct": false},
+    {"option":"DSSS", "correct": false},
+    {"option":"ESS", "correct": false},
+    {"option":"MBSS", "correct": true},
+    {"option":"IBSS", "correct": false}
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, The 802.11s-2011 amendment, which is now part of the 802.11-2012 standard, defined a new service set for an 802.11 mesh topology. When access points support mesh functions, they may be deployed where wired network access is not possible. The mesh functions are used to provide wireless distribution of network traffic, and the set of APs that provide mesh distribution form a mesh basic service set (MBSS)."
+    },
+    { "q":"What method of dialog communications is used within an 802.11 WLAN?",
+    "a": [
+    {"option":"Simplex communications", "correct": false},
+    {"option":"Half-duplex communications", "correct": true},
+    {"option":"Full-duplex communications", "correct": false},
+    {"option":"Dual-duplex communications", "correct": false}
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, In half-duplex communications, both devices are capable of transmitting and receiving; however, only one device can transmit at a time. Walkie-talkies, or two-way radios, are examples of half-duplex devices. IEEE 802.11 wireless networks use half-duplex communications."
+    },
+    { "q":"What are some operational modes in which an AP radio may be configured? (Choose all that apply.)",
+    "a": [
+    {"option":"Scanner", "correct": true},
+    {"option":"Root", "correct": true},
+    {"option":"Bridge", "correct": true},
+    {"option":"Mesh", "correct": true},
+    {"option":"Repeater", "correct": true}
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong,  The default standard mode for an access point is root mode. Other operational modes include bridge, workgroup bridge, mesh, scanner, and repeater modes."
+    },
+    { "q":"A network consisting of clients and two or more access points with the same SSID connected by an 802.3 Ethernet backbone is one example of which 802.11 topology? (Choose all that apply.)",
+    "a": [
+    {"option":"ESS", "correct": true},
+    {"option":"Basic service set", "correct": false},
+    {"option":"Extended service set", "correct": true},
+    {"option":"IBSS", "correct": false},
+    {"option":"Ethernet service set", "correct": false}
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, An extended service set (ESS) is two or more basic service sets connected by a distribution system. An ESS is a collection of multiple access points and their associated client stations, all united by a single distribution system medium."
+    },
+    { "q":"What term best describes two access points communicating with each other wirelessly while also allowing clients to communicate through the access points?",
+    "a": [
+    {"option":"WDS", "correct": true},
+    {"option":"DS", "correct": false},
+    {"option":"DSS", "correct": false},
+    {"option":"DSSS", "correct": false},
+    {"option":"DSM", "correct": false}
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong, A wireless distribution system (WDS) can connect access points together using a wireless backhaul while allowing clients to also associate to the radios in the access points."
+    },
+    { "q":"What components make up a distribution system? (Choose all that apply.)",
+    "a": [
+    {"option":"HR-DSSS", "correct": false},
+    {"option":"Distribution system services", "correct": true},
+    {"option":"DSM", "correct": true},
+    {"option":"DSSS", "correct": false},
+    {"option":"Intrusion detection system", "correct": false}
+    ],
+    "select_any": false,
+    "correct": "Correct",
+    "incorrect": "Wrong, The distribution system consists of two main components. The distribution system medium (DSM) is a logical physical medium used to connect access points. Distribution system services (DSS) consist of services built inside an access point, usually in the form of software."
+    },
+    { "q":"What type of wireless topology is defined by the 802.11 standard?",
+    "a": [
+    {"option":"WAN", "correct": false},
+    {"option":"WLAN", "correct": true},
+    {"option":"WWAN", "correct": false},
+    {"option":"WMAN", "correct": false},
+    {"option":"WPAN", "correct": false}
+    ],
+    "correct": "Correct",
+    "incorrect": "Wrong,  The 802.11 standard is considered a wireless local area network (WLAN) standard. 802.11 hardware can, however, be utilized in other wireless topologies."
+    } ]
     };
-$(function () {
-    $('#slickQuiz').slickQuiz();
-});
-</script>
-<div class="stemblock">
-<div class="content">
-\[\sum_2^{x}{H}\]
-</div>
-</div>
+    $(function () {
+    $('#chapter7').slickQuiz({json: chapter7});
+    });
+    </script>
 
 
       
