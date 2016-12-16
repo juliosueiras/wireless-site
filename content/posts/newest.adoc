@@ -865,3 +865,81 @@ image::/csma.jpg[]
 ### Immediate Block Acknowledgement
 
 image::/block.jpg[]
+
+## Cellular System Question
+
+### Chapter 1
+1. Which algorithm is used to digitize a voice signal for transmission in a digital circuit-switched
+network and at which datarate is the voice signal transmitted?
+2. Name the most important components of the GSM Network Subsystem (NSS) and their tasks.
+3. Name the most important components of the GSM radio network (BSS) and their tasks.
+4. How is a BTS able to communicate with several subscribers at the same time?
+5. Which steps are necessary to digitize a speech signal in a mobile device before it can be sent
+over the GSM air interface?
+6. What is a handover and which network components are involved?
+7. How is the current location of a subscriber determined for a mobile-terminated call and how is
+the call forwarded through the network?
+8. How is a subscriber authenticated in the GSM network? Why is an authentication necessary?
+9. How is an SMS message exchanged between two subscribers?
+10. Which tasks are performed by the RISC processor and which tasks are performed by the DSP in
+a mobile device?
+11. How are data stored on the SIM card?
+12. What is CAMEL and for which services can it be used?
+
+
+### Chapter 2
+1. What are the differences between circuit-switched and packet-switched data transmission?
+2. What are the advantages of the data transmission over GPRS compared to GSM?
+3. Why are different modulation and coding schemes used?
+4. What is the difference between the GPRS ready state and the GPRS standby state?
+5. Does the GPRS network perform a handover if a cell change is required while data is transferred?
+6. Which are the new network elements that have been introduced with GPRS and what are their
+responsibilities?
+7. What is a temporary block flow?
+8. What actions are performed during an inter-SGSN routing area update (IRAU)?
+9. Why is IP used twice in the protocol stack of the Gn interface?
+10. Why is it not necessary to change any settings on the mobile device for GPRS when roaming
+abroad?
+11. What is the difference between a GPRS attach and a PDP context activation?
+12. Why is an Access Point Name (APN) necessary for the PDP context activation procedure?
+13. How are MMS messages sent and received via GPRS?
+14. Name the different parts of an MMS message
+
+### Chapter 3
+1. What are the main differences between the GSM and UMTS radio network?
+2. What advantages does the UMTS radio network have compared to previous technologies for
+users and network operators?
+3. What were the datarates for a packet-switched connection that were offered by early Release 99
+UMTS networks?
+4. What does OVSF mean?
+5. Why is a scrambling code used in addition to the spreading code?
+6. What does ‘cell breathing’ mean?
+7. What are the differences between the Cell-DCH and the Cell-FACH RRC states?
+8. In which RRC states can a mobile device be in PMM connected mode?
+9. How is a UMTS soft handover performed and what are the advantages and disadvantages?
+10. What is an SRNS relocation?
+11. How is the mobility of a user managed in Cell-FACH state?
+12. What is the compressed mode used for?
+13. What are the basic HSDPA concepts to increase the user datarate?
+14. How is a circuit-switched voice connection handled during an ongoing HSDPA session?
+15. What are the advantages of the Enhanced-DCH (E-DCH) concept?
+16. Which options does the Node-B have to schedule the uplink traffic of different E-DCH mobile
+devices in a cell?
+
+### Chapter 4
+1. How many subcarriers are used for a 10-MHz FDD LTE channel?
+2. What is the difference between an S1 and an X2 handover?
+3. Describe the differences between the tasks for the MME and the tasks of the Serving Gateway.
+4. What is a resource block (RB)?
+5. How does a mobile device get access to the Physical Uplink Shared Channel?
+6. What are the differences between ARQ and HARQ?
+7. What is the difference between a default and a dedicated bearer?
+8. What is the purpose of DRX in RRC Connected state?
+9. How is mobility controlled in RRC Idle state?
+10. What is the difference between a Cell Change Order and a Handover?
+11. How can the LTE core network be interconnected with legacy core networks and why should this
+be done?
+12. What is CS fallback?
+13. What is the big disadvantage of Internet-based voice services compared to network operator-based
+voice services?
+14. Describe different options for the backhaul connection of the eNode-B.
