@@ -14,7 +14,8 @@
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://juliosueiras.github.io/wireless-site/posts/newest/</guid>
-      <description>&lt;div id=&#34;slickQuiz&#34;&gt;
+      <description>&lt;h1 id=&#34;_chapter_7&#34; class=&#34;sect0&#34;&gt;Chapter 7&lt;/h1&gt;
+&lt;div id=&#34;chapter7&#34;&gt;
 &lt;h1 class=&#34;quizName&#34;&gt;&lt;!-- where the quiz name goes --&gt;&lt;/h1&gt;
 
 &lt;div class=&#34;quizArea&#34;&gt;
@@ -36,47 +37,252 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
+
 &lt;script&gt;
-var quizJSON = {
+var chapter7 = {
     &#34;info&#34;: {
         &#34;name&#34;:    &#34;&#34;,
-        &#34;main&#34;:    &#34;Wireless Review Quiz&#34;,
+        &#34;main&#34;:    &#34;Chapter 7 Quiz&#34;,
     },
     &#34;questions&#34;: [
-        { // Question 1 - Multiple Choice, Single True Answer
-            &#34;q&#34;: &#34;What number is the letter A in the English alphabet?&#34;,
+        {
+            &#34;q&#34;: &#34;An 802.11 wireless network name is known as which type of address? (Choose all that apply.)&#34;,
             &#34;a&#34;: [
-                {&#34;option&#34;: &#34;8&#34;,      &#34;correct&#34;: false},
-                {&#34;option&#34;: &#34;14&#34;,     &#34;correct&#34;: false},
-                {&#34;option&#34;: &#34;1&#34;,      &#34;correct&#34;: true},
-                {&#34;option&#34;: &#34;23&#34;,     &#34;correct&#34;: false} // no comma here
+                {&#34;option&#34;: &#34;BSSID&#34;,      &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;MAC Address&#34;,     &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;IP Address&#34;,      &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;SSID&#34;,     &#34;correct&#34;: true},
+                {&#34;option&#34;: &#34;Extended service set identifier&#34;, &#34;correct&#34;: true}
             ],
-            &#34;correct&#34;: &#34;&lt;p&gt;&lt;span&gt;That&#39;s right!&lt;/span&gt; The letter A is the first letter in the alphabet!&lt;/p&gt;&#34;,
-            &#34;incorrect&#34;: &#34;&lt;p&gt;&lt;span&gt;Uhh no.&lt;/span&gt; It&#39;s the first letter of the alphabet. Did you actually &lt;em&gt;go&lt;/em&gt; to kindergarden?&lt;/p&gt;&#34; // no comma here
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, The service set identifier (SSID) is a 32-character, case-sensitive, logical name used to identify a wireless network. An extended service set identifier (ESSID) is the logical network name used in an extended service set. ESSID is often synonymous with SSID.&#34;
         },
-        { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            &#34;q&#34;: &#34;Which of the following best represents your preferred breakfast?&#34;,
+        {
+            &#34;q&#34;: &#34;Which two 802.11 topologies require the use of an access point?&#34;,
             &#34;a&#34;: [
-                {&#34;option&#34;: &#34;Bacon and eggs&#34;,               &#34;correct&#34;: false},
-                {&#34;option&#34;: &#34;Fruit, oatmeal, and yogurt&#34;,   &#34;correct&#34;: true},
-                {&#34;option&#34;: &#34;Leftover pizza&#34;,               &#34;correct&#34;: false},
-                {&#34;option&#34;: &#34;Eggs, fruit, toast, and milk&#34;, &#34;correct&#34;: true} // no comma here
+                {&#34;option&#34;: &#34;WPAN&#34;,      &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;IBSS&#34;,     &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;Basic service set&#34;,     &#34;correct&#34;: true},
+                {&#34;option&#34;: &#34;Ad hoc&#34;,      &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;ESS&#34;,     &#34;correct&#34;: true}
             ],
-            &#34;select_any&#34;: true,
-            &#34;correct&#34;: &#34;&lt;p&gt;&lt;span&gt;Nice!&lt;/span&gt; Your cholestoral level is probably doing alright.&lt;/p&gt;&#34;,
-            &#34;incorrect&#34;: &#34;&lt;p&gt;&lt;span&gt;Hmmm.&lt;/span&gt; You might want to reconsider your options.&lt;/p&gt;&#34; // no comma here
-        }
-    ]
+            &#34;select_any&#34;: false,
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, The 802.11 standard defines four service sets, or topologies. A basic service set (BSS) is defined as one AP and associated clients. An extended service set (ESS) is defined as one or more basic service sets connected by a distribution system medium. An independent basic service set (IBSS) does not use an AP and consists solely of client stations (STAs).&#34;
+        },
+        {
+            &#34;q&#34;: &#34;The 802.11 standard defines which medium to be used in a distribution system (DS)?&#34;,
+            &#34;a&#34;: [
+                {&#34;option&#34;: &#34;802.3 Ethernet&#34;,      &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;802.15&#34;,     &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;802.5 token ring&#34;,      &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;Star-bus topology&#34;,     &#34;correct&#34;: false},
+                {&#34;option&#34;: &#34;None of the above&#34;,     &#34;correct&#34;: true}
+            ],
+            &#34;correct&#34;: &#34;Correct&#34;,
+            &#34;incorrect&#34;: &#34;Wrong, By design, the 802.11 standard does not specify a medium to be used in the distribution system. The distribution system medium (DSM) may be an 802.3 Ethernet backbone, an 802.5 token ring network, a wireless medium, or any other medium.&#34;
+        },
+
+    { &#34;q&#34;:&#34;Which option is a wireless computer topology used for communication of computer devices within close proximity of a person?&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;WWAN&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Bluetooth&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;ZigBee&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;WPAN&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;WMAN&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, A wireless personal area network (WPAN) is a short-distance wireless topology. Bluetooth and ZigBee are technologies that are often used in WPANs.&#34;
+    },
+    { &#34;q&#34;:&#34;Which 802.11 service set may allow for client roaming?&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;ESS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Basic service set&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;IBSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Spread spectrum service set&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, The most common implementation of an extended service set (ESS) has access points with partially overlapping coverage cells. The purpose behind an ESS with partially overlapping coverage cells is seamless roaming.&#34;
+    },
+    { &#34;q&#34;:&#34;What factors might affect the size of a BSA coverage area of an access point? (Choose all that apply.)&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;Antenna gain&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;CSMA/CA&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Transmission power&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Indoor/outdoor surroundings&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Distribution system&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;select_any&#34;: false,
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong,  The size and shape of a basic service area can depend on many variables, including AP transmit power, antenna gain, and physical surroundings.&#34;
+    },
+    { &#34;q&#34;:&#34;What is the default configuration mode that allows an AP radio to operate in a basic service set?&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;Scanner&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Repeater&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Root&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Access&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Nonroot&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong,  The normal default setting of an access point is root mode, which allows the AP to transfer data back and forth between the DS and the 802.11 wireless medium. The default root configuration of an AP allows it to operate inside a basic service set (BSS).&#34;
+    },
+    { &#34;q&#34;:&#34;Which terms describe an 802.11 topology involving STAs but no access points? (Choose all that apply.)&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;BSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Ad hoc&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;DSSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Infrastructure&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;IBSS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Peer-to-peer&#34;, &#34;correct&#34;: true}
+    ],
+    &#34;select_any&#34;: false,
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, The 802.11 standard defines an independent basic service set (IBSS) as a service set using client peer-to-peer communications without the use of an AP. Other names for an IBSS include ad hoc and peer-to-peer. &#34;
+    },
+    { &#34;q&#34;:&#34;STAs operating in Infrastructure mode may communicate in which of the following scenarios? (Choose all that apply.)&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;802.11 frame exchanges with other STAs via an AP&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;802.11 frame exchanges with an AP in scanner mode&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;802.11 frame peer-to-peer exchanges directly with other STAs&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Frame exchanges with network devices on the DSM&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;All of the above&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;select_any&#34;: false,
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong,Clients that are configured in Infrastructure mode may communicate via the AP with other wireless client stations within a BSS. Clients may also communicate through the AP with other networking devices that exist on the distribution system medium, such as a server or a wired desktop. &#34;
+    },
+    { &#34;q&#34;:&#34;Which of these are included in the four topologies defined by the 802.11-2012 standard? (Choose all that apply.)&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;DSSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;ESS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;BSS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;IBSS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;FHSS&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;select_any&#34;: false,
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, The four topologies, or service sets, defined by the 802.11-2012 standard are basic service set (BSS), extended service set (ESS), independent basic service set (IBSS), and mesh basic service set (MBSS). DSSS and FHSS are spread spectrum technologies.&#34;
+    },
+    { &#34;q&#34;:&#34;Which wireless topology provides citywide wireless coverage?&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;WMAN&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;WLAN&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;WPAN&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;WAN&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;WWAN&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, A wireless metropolitan area network (WMAN) provides coverage to a metropolitan area such as a city and the surrounding suburbs.&#34;
+    },
+    { &#34;q&#34;:&#34;At which layer of the OSI model will a BSSID address be used?&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;Physical&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Network&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Session&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Data-Link&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Application&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, The basic service set identifier (BSSID) is a 48-bit (6-octet) MAC address. MAC addresses exist at the MAC sublayer of the Data-Link layer of the OSI model.&#34;
+    },
+    { &#34;q&#34;:&#34;The basic service set identifier address can be found in which topologies? (Choose all that apply.)&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;FHSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;IBSS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;ESS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;HR-DSSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;BSS&#34;, &#34;correct&#34;: true}
+    ],
+    &#34;select_any&#34;: false,
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, The BSSID is the layer 2 identifier of either a BSS or an IBSS service set. The 48-bit (6-octet) MAC address of an access point&#39;s radio is the basic service set identifier (BSSID) within a BSS. An ESS topology utilizes multiple access points, thus the existence of multiple BSSIDs. In an IBSS network, the first station that powers up randomly generates a virtual BSSID in the MAC address format. FHSS and HR-DSSS are spread spectrum technologies.&#34;
+    },
+    { &#34;q&#34;:&#34;Which 802.11 service set defines mechanisms for mesh networking?&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;BSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;DSSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;ESS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;MBSS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;IBSS&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, The 802.11s-2011 amendment, which is now part of the 802.11-2012 standard, defined a new service set for an 802.11 mesh topology. When access points support mesh functions, they may be deployed where wired network access is not possible. The mesh functions are used to provide wireless distribution of network traffic, and the set of APs that provide mesh distribution form a mesh basic service set (MBSS).&#34;
+    },
+    { &#34;q&#34;:&#34;What method of dialog communications is used within an 802.11 WLAN?&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;Simplex communications&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Half-duplex communications&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Full-duplex communications&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Dual-duplex communications&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, In half-duplex communications, both devices are capable of transmitting and receiving; however, only one device can transmit at a time. Walkie-talkies, or two-way radios, are examples of half-duplex devices. IEEE 802.11 wireless networks use half-duplex communications.&#34;
+    },
+    { &#34;q&#34;:&#34;What are some operational modes in which an AP radio may be configured? (Choose all that apply.)&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;Scanner&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Root&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Bridge&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Mesh&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Repeater&#34;, &#34;correct&#34;: true}
+    ],
+    &#34;select_any&#34;: false,
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong,  The default standard mode for an access point is root mode. Other operational modes include bridge, workgroup bridge, mesh, scanner, and repeater modes.&#34;
+    },
+    { &#34;q&#34;:&#34;A network consisting of clients and two or more access points with the same SSID connected by an 802.3 Ethernet backbone is one example of which 802.11 topology? (Choose all that apply.)&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;ESS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;Basic service set&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Extended service set&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;IBSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Ethernet service set&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;select_any&#34;: false,
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, An extended service set (ESS) is two or more basic service sets connected by a distribution system. An ESS is a collection of multiple access points and their associated client stations, all united by a single distribution system medium.&#34;
+    },
+    { &#34;q&#34;:&#34;What term best describes two access points communicating with each other wirelessly while also allowing clients to communicate through the access points?&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;WDS&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;DS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;DSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;DSSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;DSM&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, A wireless distribution system (WDS) can connect access points together using a wireless backhaul while allowing clients to also associate to the radios in the access points.&#34;
+    },
+    { &#34;q&#34;:&#34;What components make up a distribution system? (Choose all that apply.)&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;HR-DSSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Distribution system services&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;DSM&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;DSSS&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;Intrusion detection system&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;select_any&#34;: false,
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong, The distribution system consists of two main components. The distribution system medium (DSM) is a logical physical medium used to connect access points. Distribution system services (DSS) consist of services built inside an access point, usually in the form of software.&#34;
+    },
+    { &#34;q&#34;:&#34;What type of wireless topology is defined by the 802.11 standard?&#34;,
+    &#34;a&#34;: [
+    {&#34;option&#34;:&#34;WAN&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;WLAN&#34;, &#34;correct&#34;: true},
+    {&#34;option&#34;:&#34;WWAN&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;WMAN&#34;, &#34;correct&#34;: false},
+    {&#34;option&#34;:&#34;WPAN&#34;, &#34;correct&#34;: false}
+    ],
+    &#34;correct&#34;: &#34;Correct&#34;,
+    &#34;incorrect&#34;: &#34;Wrong,  The 802.11 standard is considered a wireless local area network (WLAN) standard. 802.11 hardware can, however, be utilized in other wireless topologies.&#34;
+    } ]
     };
-$(function () {
-    $(&#39;#slickQuiz&#39;).slickQuiz();
-});
-&lt;/script&gt;
-&lt;div class=&#34;stemblock&#34;&gt;
-&lt;div class=&#34;content&#34;&gt;
-\[\sum_2^{x}{H}\]
-&lt;/div&gt;
-&lt;/div&gt;
+    $(function () {
+    $(&#39;#chapter7&#39;).slickQuiz({json: chapter7});
+    });
+    &lt;/script&gt;
 </description>
     </item>
     
